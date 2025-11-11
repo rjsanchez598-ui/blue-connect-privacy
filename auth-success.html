@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Confirmed - BlueConnect</title>
+  <script>
+    // Auto-redirect to app after 1 second
+    setTimeout(() => {
+      window.location.href = 'blueconnect://login?confirmed=true';
+    }, 1000);
+  </script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 40px; background: #f8f9fb;">
+  <div style="max-width: 400px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #1d7eed; margin-bottom: 16px;">✓ Email Confirmed!</h1>
+    <p style="color: #374151; font-size: 16px; line-height: 24px; margin-bottom: 24px;">
+      Your email has been verified successfully.
+    </p>
+    <p style="color: #6b7280; font-size: 14px;">
+      Opening BlueConnect app...
+    </p>
+    <p style="color: #9ca3af; font-size: 12px; margin-top: 32px;">
+      App didn't open? <a href="blueconnect://login?confirmed=true" style="color: #1d7eed;">Tap here</a>
+    </p>
+  </div>
+</body>
+</html>
